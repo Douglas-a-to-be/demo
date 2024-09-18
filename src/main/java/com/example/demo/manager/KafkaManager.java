@@ -1,13 +1,12 @@
 package com.example.demo.manager;
 
+import java.util.Properties;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
-
-import java.util.Properties;
 
 public class KafkaManager {
     private final String bootstrapServer;

@@ -5,6 +5,7 @@ public class Veiculo {
     private int rodas;
     private double peso;
     private int eixos;
+    private String matricula;
 
     /**
      * @return the rodas
@@ -52,6 +53,24 @@ public class Veiculo {
     public void setEixos(int eixos) {
 
         this.eixos = eixos;
+    }
+
+
+    /**
+     * @return the matricula
+     */
+    public String getMatricula() {
+
+        return matricula;
+    }
+
+
+    /**
+     * @param matricula the matricula to set
+     */
+    public void setMatricula(String matricula) {
+
+        this.matricula = matricula;
     }
 
 }

@@ -1,6 +1,10 @@
 package com.example.demo;
 
-import jakarta.annotation.PreDestroy;
+import java.time.Duration;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -9,11 +13,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.demo.manager.KafkaManager;
-import java.time.Duration;
-import java.util.Date;
-import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import jakarta.annotation.PreDestroy;
 
 @SpringBootApplication
 public class DemoApplication {
